@@ -1,0 +1,82 @@
+import type { Project, Task } from './types';
+
+export const mockProjects: Project[] = [
+  {
+    id: '1',
+    title: 'E-commerce Platform Redesign',
+    description: 'Complete overhaul of the existing e-commerce platform with modern UI/UX principles and improved performance.',
+    clientId: 'client1',
+    status: 'active',
+    createdAt: '2024-03-10T10:00:00Z',
+    tasks: [],
+  },
+  {
+    id: '2',
+    title: 'Mobile App Development',
+    description: 'Create a cross-platform mobile application for inventory management and real-time tracking.',
+    clientId: 'client2',
+    status: 'active',
+    createdAt: '2024-03-09T15:30:00Z',
+    tasks: [],
+  },
+  {
+    id: '3',
+    title: 'API Integration Project',
+    description: 'Integrate multiple third-party APIs and create a unified dashboard for data visualization.',
+    clientId: 'client1',
+    status: 'completed',
+    createdAt: '2024-03-08T09:15:00Z',
+    tasks: [],
+  },
+];
+
+export const mockTasks: Task[] = [
+  {
+    id: '1',
+    projectId: '1',
+    title: 'Design System Implementation',
+    description: 'Create and implement a comprehensive design system for consistent UI components.',
+    budget: 2500,
+    status: 'in-progress',
+    assignedTo: 'user1',
+    createdAt: '2024-03-10T11:00:00Z',
+  },
+  {
+    id: '2',
+    projectId: '1',
+    title: 'Shopping Cart Optimization',
+    description: 'Optimize the shopping cart experience and implement new features for better conversion.',
+    budget: 1800,
+    status: 'open',
+    createdAt: '2024-03-10T12:30:00Z',
+  },
+  {
+    id: '3',
+    projectId: '2',
+    title: 'User Authentication System',
+    description: 'Implement secure user authentication with social login options.',
+    budget: 2000,
+    status: 'completed',
+    assignedTo: 'user2',
+    createdAt: '2024-03-09T16:00:00Z',
+  },
+  {
+    id: '4',
+    projectId: '2',
+    title: 'Push Notification Setup',
+    description: 'Set up and configure push notifications for mobile app alerts.',
+    budget: 1200,
+    status: 'open',
+    createdAt: '2024-03-09T17:15:00Z',
+  },
+  {
+    id: '5',
+    projectId: '3',
+    title: 'Data Visualization Dashboard',
+    description: 'Create interactive charts and graphs for data visualization.',
+    budget: 3000,
+    status: 'completed',
+    assignedTo: 'user3',
+    createdAt: '2024-03-08T10:00:00Z',
+  },
+];
